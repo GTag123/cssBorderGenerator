@@ -1,0 +1,13 @@
+.rectangle {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    bottom: 300px;
+    width: 400px;
+    height: 200px;
+    background: green;
+}
+table {
+    border-spacing: 15px 20px;
+    border: 1px solid black;
+}

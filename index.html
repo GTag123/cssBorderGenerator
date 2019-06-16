@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <table id="table">
+        <tbody>
+            <tr>
+                <td>Border-radius left-top:</td>
+                <td>
+                    <input type="range" class="borders" value="0" step="1" min="0" max="100">
+                </td>
+                <td>
+                    <input type="text" value="0" class="borders-text"><span> px</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Border-radius right-top:</td>
+                <td>
+                    <input type="range" class="borders" value="0" step="1" min="0" max="100">
+                </td>
+                <td>
+                    <input type="text" value="0" class="borders-text"><span> px</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Border-radius right-bottom:</td>
+                <td>
+                    <input type="range" class="borders" value="0" step="1" min="0" max="100">
+                </td>
+                <td>
+                    <input type="text" value="0" class="borders-text"><span> px</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Border-radius left-bottom:</td>
+                <td>
+                    <input type="range" class="borders" value="0" step="1" min="0" max="100">
+                </td>
+                <td>
+                    <input type="text" value="0" class="borders-text"><span> px</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <span><input type="checkbox" id="checkbox" onchange="hideBorderLineTbody(this);">Border line</span>
+                </td>
+            </tr>
+            </tbody>
+            <tbody id="tbody-border-line" style="display: none;">
+            <tr>
+                <td>Border line</td>
+                <td>
+                    <input type="range" class="border-line-range" value="0" step="1" min="0" max="200">
+                </td>
+                <td>
+                    <input type="text" value="0" class="border-line-text"><span> px</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Type:
+                    <select id="border-style">
+                        <option value="solid" selected>Solid</option>
+                        <option value="dotted">Dotted</option>
+                        <option value="dashed">Dashed</option>
+                        <option value="double">Double</option>
+                        <option value="outset">Outset</option>
+                        <option value="inset">Inset</option>
+                        <option value="groove">Groove</option>
+                        <option value="ridge">Ridge</option>
+                    </select>
+                </td>
+                <td>Color:
+                    <select id="border-color">
+                        <option value="black" selected>Black</option>
+                        <option value="red">Red</option>
+                        <option value="lime">Green</option>
+                        <option value="olive">Olive</option>
+                        <option value="blue">Blue</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="fuchsia">Pink</option>
+                        <option value="aqua">Aqua</option>
+                        <option value="silver">Silver</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="rectangle"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
